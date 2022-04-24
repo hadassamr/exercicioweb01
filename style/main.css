@@ -1,0 +1,166 @@
+/** Configuraçoes gerais**/
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: bisque;
+    margin: 0;
+    padding: 10px, 50px, 50px, 50px;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+header h3 {
+    font-size: 2rem;
+    user-select: none;
+    /* impede o usuario de selecionar o texto*/
+    align-self: stretch;
+
+}
+
+
+h3 {
+    margin: 0;
+    font-weight: lighter;
+    /* a fonte ficou mais fininha*/
+}
+
+
+#logo {
+    /*background-image: url('../img/mar.png');*/
+    text-align: center;
+    padding: 10px;
+}
+
+
+#logoImg {
+    padding-right: 10px;
+    pointer-events: none;
+    /*nao permitir a interaçao com o logo*/
+}
+
+
+.menu {
+    font-size: 1rem;
+    /*display: grid; deixar um embaixo do outro*/
+    display: flex;
+    justify-content: right;
+    padding-right: 1rem;
+}
+
+
+.menu a {
+    padding: 1rem;
+    text-decoration: none;
+    color: black;
+    font-weight: lighter;
+}
+
+
+.menu a:hover {
+    color: rgb(156, 152, 152);
+    cursor: pointer;
+}
+
+
+#linha-horizontal {
+    color: #66CDAA;
+    border: 1px solid;
+    /*box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.12); */
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.12);
+}
+
+
+.coluna-horizontal1 {
+    background-color: white;
+    padding: ;
+    display: flex;
+    justify-content: left;
+    position: relative;
+}
+
+.coluna-horizontal1 img p {
+    position:relative
+}
+
+
+
+.coluna-horizontal1 p {
+    font-size: 3rem;
+    font-family: Times, Times New Roman, serif;
+    padding: 10px 10px 40px 30px;
+    font-weight: lighter;
+    text-shadow: 0px 1px 2px rgba(236, 233, 233, 0.12), 0px 1px 2px rgba(241, 236, 236, 0.19);
+    position: relative;
+}
+
+.coluna-horizontal2 {
+    background-color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: right;
+    position: relative;
+}
+
+.coluna-horizontal2 img {
+    margin-left: 15rem;
+}
+
+
+.coluna-horizontal2 h5 {
+    font-size: 2rem;
+    font-family: Times, Times New Roman, serif;
+
+    text-align: left;
+    font-weight: lighter;
+    text-shadow: 0px 1px 2px rgba(236, 233, 233, 0.12), 0px 1px 2px rgba(241, 236, 236, 0.19);
+
+
+}
+
+
+main div {
+    font-size: 1rem;
+    text-align: center;
+    padding: 90px 0px 10px 0px;
+}
+
+
+#wpp img {
+    position: fixed;
+    bottom: 5px;
+    right: 10px;
+    height: 70px;
+    border-radius: 100%;
+    transition: opacity 0.3s;
+    cursor: pointer;
+
+}
+
+#wpp :hover {
+    opacity: 0.75;
+}
+
+
+@media screen and (max-width: 800px) {
+    .coluna-horizontal1 {
+        background-color: white;
+        padding: 20px 40px;
+        width: 100%;
+        display: flex;
+        justify-content: left;
+        position: relative;
+    }
+    coluna-horizontal2 {
+        background-color: white;
+        padding: 20px 40px;
+        width:100%;
+        display: flex;
+        justify-content: right;
+        position: relative;
+}
+}
